@@ -36,4 +36,6 @@ export const getMembersList = async (queries?: MicroCMSQueries) => {
     endpoint: "members",
     queries,
   });
+
+  return listData;
 };
