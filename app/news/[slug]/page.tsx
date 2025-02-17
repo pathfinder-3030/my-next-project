@@ -15,6 +15,8 @@ type Props = {
   };
 };
 
+export const revalidate = 0;
+
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const data = await getNewsDetail(params.slug, {
     draftKey: searchParams.dk,
